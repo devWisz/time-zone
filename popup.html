@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Timefy</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+
+  <h1>Timefy</h1>
+  <p class="subtitle">Compare global time instantly</p>
+
+  <div class="card">
+    <span class="label">Your Local Time</span>
+    <div id="localTime" class="time"></div>
+  </div>
+
+  <div class="card">
+    <span class="label">Select Time Zone</span>
+    <select id="zoneSelect"></select>
+    <div id="otherTime" class="time"></div>
+    <div id="difference" class="diff"></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
