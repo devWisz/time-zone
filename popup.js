@@ -22,3 +22,25 @@ zones.forEach(z => {
   select.appendChild(option);
 });
 
+function formatTime(zone) {
+  return new Intl.DateTimeFormat("en-US", {
+    timeZone: zone,
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: true
+  }).format(new Date());
+}
+
+function getHourDifference(zone) {
+  const now = new Date();
+  const localZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
+  const local = new Date(now.toLocaleString("en-US", { timeZone: localZone }));
+  const target = new Date(now.toLocaleString("en-US", { timeZone: zone }));
+
+  return (target - local) / (1000 * 60 * 60);
+}
+
+function update() {
+}
