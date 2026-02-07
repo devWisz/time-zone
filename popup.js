@@ -43,4 +43,13 @@ function getHourDifference(zone) {
 }
 
 function update() {
+  const localZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
+  localTimeEl.textContent = formatTime(localZone);
+
+  const selectedZone = select.value;
+  otherTimeEl.textContent = formatTime(selectedZone);
+
+
 }
+
