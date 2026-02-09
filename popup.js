@@ -50,6 +50,11 @@ function update() {
   const selectedZone = select.value;
   otherTimeEl.textContent = formatTime(selectedZone);
 
-
+  const diff = getHourDifference(selectedZone);
+  const sign = diff >= 0 ? "+" : "";
+  diffEl.textContent = `Difference: ${sign}${diff.toFixed(1)} hrs`;
 }
 
+select.addEventListener("change", update);
+setInterval(update, 1000);
+update();''
