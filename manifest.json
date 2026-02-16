@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Timefy",
   "version": "1.1",
-  "description": "Compare local time with global time zones including UTC and GMT.",
+  "description": "Compare local time with global time zones including UTC and GMT and allows to view the time zones also",
   "action": {
     "default_popup": "popup.html"
   }

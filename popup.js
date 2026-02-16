@@ -151,5 +151,4 @@ formatToggle.addEventListener("click", () => {
 
 select.addEventListener("change", update);
 setInterval(update, 1000);
-update(); 
-
+update();
