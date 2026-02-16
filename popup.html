@@ -21,8 +21,18 @@
     <div id="otherTime" class="time"></div>
     <div id="difference" class="diff"></div>
     <button id="formatToggle" class="format-toggle">Switch to 24-Hour Format</button>
+    <button id="viewZonesBtn" class="view-zones-btn">View Time Zones</button>
   </div>
-
+  <div id="modalOverlay" class="modal-overlay">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">World Time Zones</h2>
+        <button id="closeModal" class="close-btn">&times;</button>
+      </div>
+      <div class="modal-body" id="modalBody">
+      </div>
+    </div>
+  </div>
   <script src="popup.js"></script>
 </body>
-</html>
+</html> 
