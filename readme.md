@@ -72,28 +72,6 @@ Click Load unpacked → Select the cloned project folder
 
 You can now test and modify the extension locally.
 
-Project Structure
-time-zone/
-│
-├── manifest.json   # Extension configuration
-├── popup.html      # Popup interface structure
-├── popup.css       # Styles and UI design
-├── popup.js        # Time logic and functionality
-├── README.md       # Project documentation
-└── .gitignore      # Git ignore rules
-
-Updating the Extension
-
-Increase the version in manifest.json
-
-Repack the extension using your .pem key
-
-Push updates:
-
-git add .
-git commit -m "Update version"
-git push
-
 
 License
 
