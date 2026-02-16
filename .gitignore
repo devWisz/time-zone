@@ -1,0 +1,17 @@
+# Private key (NEVER commit this)
+*.pem
+
+# Packaged extension
+*.crx
+
+# Node modules (if you ever use build tools)
+node_modules/
+
+# Logs
+*.log
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+keys/
